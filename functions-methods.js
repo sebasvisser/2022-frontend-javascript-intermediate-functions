@@ -31,6 +31,17 @@ console.log(getEmailDomain("a.wiersma@outlook.com"));
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+function typeOfEmail(emailAddress){
+    //maak er een string object van
+    const string = new String(emailAddress);
+    // zoek naar domein en verwijder alles ervoor met slice
+
+    // vergelijk via switchcase
+
+    // geef output
+    const result = 123 ;
+    return result;
+}
 
 
 /* Opdracht  3 */
