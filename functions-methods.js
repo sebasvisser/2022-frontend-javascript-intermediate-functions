@@ -69,3 +69,25 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 // check voor elke voorwaarde apart
 // maak if statement waarbij alles waar moet zijn
 // return true als alles goed is
+
+function checkEmailValidity(emailAddress){
+    const string = new String(emailAddress);
+
+    const checkAt = string.includes("@");
+    console.log({checkAt});
+    const checkComma = !string.includes(",");
+    console.log({checkComma});
+    const checkDotLast = ;
+
+
+    console.log({checkDotLast});
+
+    const isValid = checkAt && checkComma && checkDotLast;
+    return isValid;
+}
+console.log("Antwoorden opdracht 2:");
+console.log(checkEmailValidity("n.eeken@novi.nl"));
+console.log(checkEmailValidity("tessmellink@novi.nl"));
+console.log(checkEmailValidity("n.eekenanovi.nl"));
+console.log(checkEmailValidity("n.eeken@novinl."));
+console.log(checkEmailValidity("tessmellink@novi,nl"));
