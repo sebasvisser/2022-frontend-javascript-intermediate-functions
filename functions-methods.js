@@ -70,7 +70,7 @@ function checkEmailValidity(emailAddress){
     const checkAt = string.includes("@");
     const checkComma = !string.includes(",");
     const lastCharacter = string.charAt(string.length-1);
-    const checkDotLast = lastCharacter != "." ;
+    const checkDotLast = lastCharacter !== "." ;
     const isValid = checkAt && checkComma && checkDotLast;
 
     return 'checkEmailValidity("' + emailAddress + '") geeft ' + isValid;
