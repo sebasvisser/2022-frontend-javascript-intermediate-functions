@@ -33,13 +33,9 @@ console.log(getEmailDomain("a.wiersma@outlook.com"));
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
 function typeOfEmail(emailAddress){
-    //maak er een string object van
     let string = new String(emailAddress);
-    // zoek naar domein en verwijder alles ervoor met slice
     const atSymbolIndex =  string.search("@");
     string = string.slice(atSymbolIndex);
-    console.log({string})
-    // vergelijk via switchcase
     let domainCase = null;
     switch(string) {
         case "@novi.nl":
@@ -51,12 +47,10 @@ function typeOfEmail(emailAddress){
         default:
             domainCase = "Extern";
     }
-    // geef output
     const resultSentence = 'typeOfEmail("' + emailAddress + '") geeft ' + domainCase;
     return resultSentence;
 }
 console.log("Antwoorden opdracht 2:")
-
 console.log(typeOfEmail("n.eeken@novi-education.nl"));
 console.log(typeOfEmail("t.mellink@novi.nl"));
 console.log(typeOfEmail("novi.nlaapjesk@outlook.com"));
