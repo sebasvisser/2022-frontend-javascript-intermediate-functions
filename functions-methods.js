@@ -83,9 +83,10 @@ function checkEmailValidity(emailAddress){
     console.log({checkDotLast});
 
     const isValid = checkAt && checkComma && checkDotLast;
-    return isValid;
+    return 'checkEmailValidity("' + emailAddress + '") geeft ' + isValid;
 }
-console.log("Antwoorden opdracht 2:");
+
+console.log("Antwoorden opdracht 3:");
 console.log(checkEmailValidity("n.eeken@novi.nl"));
 console.log(checkEmailValidity("tessmellink@novi.nl"));
 console.log(checkEmailValidity("n.eekenanovi.nl"));
