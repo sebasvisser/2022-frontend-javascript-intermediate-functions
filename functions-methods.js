@@ -77,9 +77,8 @@ function checkEmailValidity(emailAddress){
     console.log({checkAt});
     const checkComma = !string.includes(",");
     console.log({checkComma});
-    const checkDotLast = ;
-
-
+    const lastCharacter = string.charAt(string.length-1);
+    const checkDotLast = lastCharacter != "." ;
     console.log({checkDotLast});
 
     const isValid = checkAt && checkComma && checkDotLast;
