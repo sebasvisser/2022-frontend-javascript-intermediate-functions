@@ -50,7 +50,7 @@ function typeOfEmail(emailAddress){
     const resultSentence = 'typeOfEmail("' + emailAddress + '") geeft ' + domainCase;
     return resultSentence;
 }
-console.log("Antwoorden opdracht 2:")
+console.log("Antwoorden opdracht 2:");
 console.log(typeOfEmail("n.eeken@novi-education.nl"));
 console.log(typeOfEmail("t.mellink@novi.nl"));
 console.log(typeOfEmail("novi.nlaapjesk@outlook.com"));
