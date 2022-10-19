@@ -72,16 +72,12 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 
 function checkEmailValidity(emailAddress){
     const string = new String(emailAddress);
-
     const checkAt = string.includes("@");
-    console.log({checkAt});
     const checkComma = !string.includes(",");
-    console.log({checkComma});
     const lastCharacter = string.charAt(string.length-1);
     const checkDotLast = lastCharacter != "." ;
-    console.log({checkDotLast});
-
     const isValid = checkAt && checkComma && checkDotLast;
+
     return 'checkEmailValidity("' + emailAddress + '") geeft ' + isValid;
 }
 
