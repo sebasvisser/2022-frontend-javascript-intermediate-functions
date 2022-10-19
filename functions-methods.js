@@ -13,9 +13,7 @@ function getEmailDomain(emailAddress){
     const string = new String(emailAddress);
     const atSymbolIndex =  string.search("@");
     const domainName = string.slice( atSymbolIndex );
-    const returnSentence = 'getEmailDomain(' + emailAddress + '") geeft ' + domainName;
-
-    return returnSentence;
+    return 'getEmailDomain(' + emailAddress + '") geeft ' + domainName;
 }
 
 console.log("Antwoorden opdracht 1:")
@@ -36,7 +34,7 @@ function typeOfEmail(emailAddress){
     let string = new String(emailAddress);
     const atSymbolIndex =  string.search("@");
     string = string.slice(atSymbolIndex);
-    let domainCase = null;
+    let domainCase;
     switch(string) {
         case "@novi.nl":
             domainCase = "Medewerker";
@@ -47,8 +45,7 @@ function typeOfEmail(emailAddress){
         default:
             domainCase = "Extern";
     }
-    const resultSentence = 'typeOfEmail("' + emailAddress + '") geeft ' + domainCase;
-    return resultSentence;
+    return 'typeOfEmail("' + emailAddress + '") geeft ' + domainCase;
 }
 console.log("Antwoorden opdracht 2:");
 console.log(typeOfEmail("n.eeken@novi-education.nl"));
