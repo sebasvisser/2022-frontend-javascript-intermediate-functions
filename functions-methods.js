@@ -21,7 +21,6 @@ console.log(getEmailDomain("n.eeken@novi-education.nl"));
 console.log(getEmailDomain("t.mellink@novi.nl"));
 console.log(getEmailDomain("a.wiersma@outlook.com"));
 
-
 /* Opdracht  2 */
 // Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht. De functie checkt of het emailadres een novi domein heeft (medewerker), een novi-education domein (student), of extern domein (zoals gmail of outlook)
 // ---- Verwachte uitkomsten:
@@ -53,7 +52,6 @@ console.log(typeOfEmail("t.mellink@novi.nl"));
 console.log(typeOfEmail("novi.nlaapjesk@outlook.com"));
 console.log(typeOfEmail("a.wiersma@outlook.com"));
 
-
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
 // Een emailadres is valide wanneer:
@@ -66,3 +64,8 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+// maak functie
+// check voor elke voorwaarde apart
+// maak if statement waarbij alles waar moet zijn
+// return true als alles goed is
