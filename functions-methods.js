@@ -65,11 +65,6 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
-// maak functie
-// check voor elke voorwaarde apart
-// maak if statement waarbij alles waar moet zijn
-// return true als alles goed is
-
 function checkEmailValidity(emailAddress){
     const string = new String(emailAddress);
     const checkAt = string.includes("@");
