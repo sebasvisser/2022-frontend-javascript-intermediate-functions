@@ -14,20 +14,40 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
 // Log het antwoord in de terminal.
 
-// ---- Verwachte uitkomst: 6
+let countCumLaude = null;
+for (let i = 0; i < grades.length ; i++) {
+    if (grades[i]>=8){
+        countCumLaude++;
+    }
+}
 
+console.log("Opdracht 1:")
+// ---- Verwachte uitkomst: 6
+console.log(cumLaude(grades));
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
 // Log het antwoord in de terminal.
 
+function cumLaude(grades){
+    let countCumLaude = 0;
+    for (let i = 0; i < grades.length ; i++) {
+        if (grades[i]>=8){
+            countCumLaude++;
+        }
+    }
+    return countCumLaude;
+}
+
+console.log("Opdracht 2:");
 // ---- Verwachte uitkomsten:
 // cumLaude(grades) geeft 6
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
-
-
+console.log(cumLaude(grades));
+console.log(cumLaude([6, 4, 5]));
+console.log(cumLaude([8, 9, 4, 6, 10]));
 
 
 /* Opdracht  2: Gemiddeld cijfer */
@@ -39,6 +59,10 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // * Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen?
 // * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
 // Log het antwoord in de terminal.
+
+for (let i = 0; i < grades.length ; i++) {
+
+}
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
