@@ -10,7 +10,7 @@
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
 function getEmailDomain(emailAddress){
-    const string = new String(emailAddress);
+    const string = String(emailAddress);
     const atSymbolIndex =  string.search("@");
     const domainName = string.slice( atSymbolIndex );
     return 'getEmailDomain(' + emailAddress + '") geeft ' + domainName;
@@ -30,7 +30,7 @@ console.log(getEmailDomain("a.wiersma@outlook.com"));
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
 function typeOfEmail(emailAddress){
-    let string = new String(emailAddress);
+    let string = String(emailAddress);
     const atSymbolIndex =  string.search("@");
     string = string.slice(atSymbolIndex);
     let domainCase;
@@ -66,7 +66,7 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
 function checkEmailValidity(emailAddress){
-    const string = new String(emailAddress);
+    const string = String(emailAddress);
     const checkAt = string.includes("@");
     const checkComma = !string.includes(",");
     const lastCharacter = string.charAt(string.length-1);
