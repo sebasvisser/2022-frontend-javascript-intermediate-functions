@@ -96,7 +96,7 @@ console.log(averageGrade([8, 9, 4, 6, 10]));
 // Tip: Google is your best friend!
 
 function roundedGrades(grade){
-    return grade.toFixed(2,grade);
+    return grade.toFixed(2);
 }
 
 console.log("Opdracht 2c:")
